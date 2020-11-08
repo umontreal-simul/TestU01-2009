@@ -10,23 +10,10 @@
  * e-mail: lecuyer@iro.umontreal.ca
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted without a fee for private, research,
- * academic, or other non-commercial purposes.
- * Any use of this software in a commercial environment requires a
- * written licence from the copyright owner.
- *
- * Any changes made to this package must be clearly identified as such.
+ * This software is provided under the Apache 2 License.
  *
  * In scientific publications which used this software, a reference to it
  * would be appreciated.
- *
- * Redistributions of source code must retain this copyright notice
- * and the following disclaimer.
- *
- * THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
- * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
 \*************************************************************************/
 
