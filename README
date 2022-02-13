@@ -73,7 +73,10 @@ The packages MinGW32 and MSYS are required to make TestU01 work on Windows.
 And the configure command must be called with the option --disable-shared
 ---------------------------------
 
-
+- If installing a development version from Git, you may wish to regenerate
+  the configure file by using 
+  
+         sh ./bootstrap
 
 - Call configure (or sh ./configure) to configure the package for your system.
   Give also the name of the directory where you want to install the libraries
