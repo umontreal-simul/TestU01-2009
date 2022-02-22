@@ -2109,7 +2109,7 @@ static void Multinom (unif01_Gen * gen, smultin_Param * par,
    double UnSurHache;
    double HacheLR;                /* Dimension of hashing table */
    long i;
-   long CoMax;                    /* Maximum number of balls in any cell */
+   long CoMax = -1;                    /* Maximum number of balls in any cell */
    double X0, X;                  /* Statistics */
    DeltaIndex j;                  /* Which power divergence case */
    double SumX2[smultin_MAX_DELTA];
