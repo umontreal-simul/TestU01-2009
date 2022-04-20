@@ -3212,8 +3212,7 @@ static void DoWalk (lebool fileFlag, /* */
    }
    if (L < 4)
       return;
-   n = nb / (L * N);
-   n = util_Min (n, 500 * MILLION);
+   n = util_Min (nb / (L * N), 500 * MILLION);
    if (L < 32) {
       while (32 * n > nb)
          n--;
@@ -3235,8 +3234,7 @@ static void DoWalk (lebool fileFlag, /* */
    L = 1024;
    z = nb / L;
    N = 1 + z / BILLION;
-   n = z / N;
-   n = util_Min (n, 50 * MILLION);
+   n = util_Min (z / N, 50 * MILLION);
    N = 1;
    while ((double) n * L > nb)
       n--;
@@ -3254,8 +3252,7 @@ static void DoWalk (lebool fileFlag, /* */
    L = 10016;
    z = nb / L;
    N = 1 + z / BILLION;
-   n = z / N;
-   n = util_Min (n, 5 * MILLION);
+   n = util_Min (z / N, 5 * MILLION);
    N = 1;
    while ((double) n * L > nb)
       n--;
