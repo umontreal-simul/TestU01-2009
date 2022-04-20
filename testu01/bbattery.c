@@ -2751,7 +2751,11 @@ static void Alphabit (unif01_Gen * gen, char *fname, double nb, int r, int s,
    util_Assert (nb > 0, "Alphabit:   nb <= 0");
    /* Bits will be read as 32-bit unsigned integers */
    nb -= fmod (nb, 32.0);
-   bufsiz = nb / 32.0;
+   if(nb < LONG_MAX / 4) {
+      bufsiz = nb / 32.0;
+   } else {
+      bufsiz = LONG_MAX / 4;
+   }
 
    if (blocFlag) {
       gen0 = ufile_CreateReadBin (fname, bufsiz);
@@ -3300,7 +3304,11 @@ static void Rabbit (unif01_Gen * gen, char *fname, double nb, int Rep[])
    /* Bits will be read as 32-bit unsigned integers */
    nb -= fmod (nb, 32.0);
    nw = nb / 32.0;
-   bufsiz = nw;
+   if(nw < LONG_MAX/4) {
+      bufsiz = nw;
+   } else {
+      bufsiz = LONG_MAX/4;
+   }
 
    if (NULL == gen) {
       gen = ufile_CreateReadBin (fname, bufsiz);
