@@ -2751,7 +2751,11 @@ static void Alphabit (unif01_Gen * gen, char *fname, double nb, int r, int s,
    util_Assert (nb > 0, "Alphabit:   nb <= 0");
    /* Bits will be read as 32-bit unsigned integers */
    nb -= fmod (nb, 32.0);
-   bufsiz = nb / 32.0;
+   if(nb < LONG_MAX / 4) {
+      bufsiz = nb / 32.0;
+   } else {
+      bufsiz = LONG_MAX / 4;
+   }
 
    if (blocFlag) {
       gen0 = ufile_CreateReadBin (fname, bufsiz);
@@ -3208,8 +3212,7 @@ static void DoWalk (lebool fileFlag, /* */
    }
    if (L < 4)
       return;
-   n = nb / (L * N);
-   n = util_Min (n, 500 * MILLION);
+   n = util_Min (nb / (L * N), 500 * MILLION);
    if (L < 32) {
       while (32 * n > nb)
          n--;
@@ -3231,8 +3234,7 @@ static void DoWalk (lebool fileFlag, /* */
    L = 1024;
    z = nb / L;
    N = 1 + z / BILLION;
-   n = z / N;
-   n = util_Min (n, 50 * MILLION);
+   n = util_Min (z / N, 50 * MILLION);
    N = 1;
    while ((double) n * L > nb)
       n--;
@@ -3250,8 +3252,7 @@ static void DoWalk (lebool fileFlag, /* */
    L = 10016;
    z = nb / L;
    N = 1 + z / BILLION;
-   n = z / N;
-   n = util_Min (n, 5 * MILLION);
+   n = util_Min (z / N, 5 * MILLION);
    N = 1;
    while ((double) n * L > nb)
       n--;
@@ -3300,7 +3301,11 @@ static void Rabbit (unif01_Gen * gen, char *fname, double nb, int Rep[])
    /* Bits will be read as 32-bit unsigned integers */
    nb -= fmod (nb, 32.0);
    nw = nb / 32.0;
-   bufsiz = nw;
+   if(nw < LONG_MAX/4) {
+      bufsiz = nw;
+   } else {
+      bufsiz = LONG_MAX/4;
+   }
 
    if (NULL == gen) {
       gen = ufile_CreateReadBin (fname, bufsiz);
