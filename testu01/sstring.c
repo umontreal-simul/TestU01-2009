@@ -324,6 +324,7 @@ static sstring_Corr * CreateCorr (int s)
 
    XS = corr->Corr[0] = util_Malloc (sizeof (struct InfoListC));
    XS->Nb = 0;
+   XS->C = 0;
    XS->Pop = 1;
    XS->Ext = NULL;
    XS->Ext0 = NULL;
@@ -331,6 +332,7 @@ static sstring_Corr * CreateCorr (int s)
 
    XS = corr->Corr[1] = util_Malloc (sizeof (struct InfoListC));
    XS->Nb = 1;
+   XS->C = 0;
    bitset_SetBit (XS->C, 0);
    XS->Pop = 2;
    XS->Ext = NULL;
