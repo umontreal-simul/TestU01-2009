@@ -61,6 +61,47 @@
 #define RABBIT_NUM 26
 #define ALPHABIT_NUM 9
 
+/* Count of p-values/statistics per battery in external arrays */
+static const int SMALLCRUSH_RUNS[SMALLCRUSH_NUM] = {
+1,1,1,1,1,2,1,1,1,5
+};
+
+static const int CRUSH_RUNS[CRUSH_NUM] = {
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,6,6,6,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+2,2,2,2,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,5,5,5,5,5,
+2,2,1,1,1,2,2,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+2,2,1,1,1,1
+};
+
+static const int BIGCRUSH_RUNS[BIGCRUSH_NUM] = {
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,6,6,6,6,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,2,2,2,2,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,5,5,5,5,5,5,2,
+2,1,1,1,1,2,2,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+2,2,1,1,1,1
+};
+
+static const int RABBIT_RUNS[RABBIT_NUM] = {
+1,1,1,1,2,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,2,
+1,1,1,1,1,3*5
+};
+
+static const int ALPHABIT_RUNS[ALPHABIT_NUM] = {
+1,1,1,1,1,1,1,5,5
+};
 
 double bbattery_pVal[1 + NDIM] = { 0 };
 char *bbattery_TestNames[1 + NDIM] = { 0 };
@@ -77,6 +118,25 @@ static int TestNumber[1 + NDIM] = { 0 };
 
 
 /*-------------------------------- Functions ------------------------------*/
+
+
+static int CheckpValSize(const int num, const int runs[], int Rep[])
+{
+   int i, j;
+
+   for (i = 1, j = 0 ; i <= num; i++) {
+      j += (Rep[i] * runs[i - 1]);
+   }
+
+   if (j > NDIM) {
+      printf ("ERROR Repetition count is too high and will overflow, aborting.\n");
+      return 0;
+   }
+   return 1;
+}
+
+
+/*=========================================================================*/
 
 
 static void GetName (unif01_Gen * gen, char *genName)
@@ -595,7 +655,8 @@ void bbattery_SmallCrushFile (char *filename)
 
 void bbattery_RepeatSmallCrush (unif01_Gen * gen, int Rep[])
 {
-   SmallCrush (gen, NULL, Rep);
+   if (CheckpValSize(SMALLCRUSH_NUM, SMALLCRUSH_RUNS, Rep))
+      SmallCrush (gen, NULL, Rep);
 }
 
 
@@ -1601,7 +1662,8 @@ void bbattery_Crush (unif01_Gen * gen)
 
 void bbattery_RepeatCrush (unif01_Gen * gen, int Rep[])
 {
-   Crush (gen, Rep);
+   if (CheckpValSize(CRUSH_NUM, CRUSH_RUNS, Rep))
+      Crush (gen, Rep);
 }
 
 
@@ -2694,7 +2756,8 @@ void bbattery_BigCrush (unif01_Gen * gen)
 
 void bbattery_RepeatBigCrush (unif01_Gen * gen, int Rep[])
 {
-   BigCrush (gen, Rep);
+   if (CheckpValSize(BIGCRUSH_NUM, BIGCRUSH_RUNS, Rep))
+      BigCrush (gen, Rep);
 }
 
 
@@ -2985,7 +3048,8 @@ void bbattery_AlphabitFile (char *filename, double nb)
 void bbattery_RepeatAlphabit (unif01_Gen * gen, double nb, int r, int s,
    int Rep[])
 {
-   Alphabit (gen, NULL, nb, r, s, FALSE, 0, Rep);
+   if (CheckpValSize(ALPHABIT_NUM, ALPHABIT_RUNS, Rep))
+      Alphabit (gen, NULL, nb, r, s, FALSE, 0, Rep);
 }
 
 
@@ -3013,7 +3077,7 @@ void bbattery_BlockAlphabit (unif01_Gen * gen, double n, int r, int s)
 void bbattery_RepeatBlockAlphabit (unif01_Gen * gen, double nb, int r, int s,
    int Rep[], int L)
 {
-   if ((L <= 32) && (L <= s)) {
+   if (CheckpValSize(ALPHABIT_NUM, ALPHABIT_RUNS, Rep) && (L <= 32) && (L <= s)) {
       unif01_Gen *gen2;
       gen2 = unif01_CreateBitBlockGen (gen, r, s, L);
       Alphabit (gen2, NULL, nb, r, s, FALSE, 0, Rep);
@@ -3812,7 +3876,8 @@ void bbattery_RabbitFile (char *filename, double nb)
 
 void bbattery_RepeatRabbit (unif01_Gen * gen, double nb, int Rep[])
 {
-   Rabbit (gen, NULL, nb, Rep);
+   if (CheckpValSize(RABBIT_NUM, RABBIT_RUNS, Rep))
+      Rabbit (gen, NULL, nb, Rep);
 }
 
 
