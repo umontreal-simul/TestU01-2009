@@ -12,10 +12,10 @@ This version was created on 18 August 2009.
 
 - Licence and [copyright](http://simul.iro.umontreal.ca/testu01/copyright.html).
 - The installation uses configure.
-- [Binaries for Cygwin under MS Windows](http://simul.iro.umontreal.ca/testu01/bin-cygwin.zip)
-- [Binaries for MinGW under MS Windows](http://simul.iro.umontreal.ca/testu01/bin-mingw.zip)
-- [Installation](http://simul.iro.umontreal.ca/testu01/install.html)
-- [User's guide](http://simul.iro.umontreal.ca/testu01/guideshorttestu01.pdf) (pdf)
+- [Binaries for Cygwin under MS Windows](https://www.iro.umontreal.ca/~simul/testu01/bin-cygwin.zip)
+- [Binaries for MinGW under MS Windows](https://www.iro.umontreal.ca/~simul/testu01/bin-mingw.zip)
+- [Installation](https://www.iro.umontreal.ca/~simul/testu01/install.html)
+- [User's guide](https://www.iro.umontreal.ca/~simul/testu01/guideshorttestu01.pdf) (pdf)
 - [Paper](http://portal.acm.org/citation.cfm?doid=1268776.1268777) (pdf) describing TestU01 with results from our test suites applied on several popular generators: P. L'Ecuyer and R. Simard, TestU01: A C Library for Empirical Testing of Random Number Generators ACM Transactions on Mathematical Software, Vol. 33, article 22, 2007.
       ERRATUM: The period of generator Brent-xor4096s in Table I should be 2^4128 and not 2^131072.
       
