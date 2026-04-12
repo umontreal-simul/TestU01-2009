@@ -10,7 +10,7 @@ The documentation with a description of the functions in TestU01 is available in
 ## TestU01-1.2.3
 This version was created on 18 August 2009.
 
-- Licence and [copyright](http://simul.iro.umontreal.ca/testu01/copyright.html).
+- Licence and [copyright](http://www.iro.umontreal.ca/~simul/testu01/copyright.html).
 - The installation uses configure.
 - [Binaries for Cygwin under MS Windows](https://www.iro.umontreal.ca/~simul/testu01/bin-cygwin.zip)
 - [Binaries for MinGW under MS Windows](https://www.iro.umontreal.ca/~simul/testu01/bin-mingw.zip)
