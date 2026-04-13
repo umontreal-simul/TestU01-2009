@@ -208,7 +208,7 @@ unif01_Gen * unif01_CreateDoubleGen2 (unif01_Gen *gen, double v)
    len += len3;
    name = util_Calloc (len + 1, sizeof (char));
    strncpy (name, gen->name, len);
-   strncat (name, "\nunif01_CreateDoubleGen2 with h = ", len2);
+   strncat (name, "\nunif01_CreateDoubleGen2 with h = ", 1 + len2);
    strncat (name, str, len3);
 
    /* The state of the double generator is simply the state of the original
@@ -243,7 +243,7 @@ unif01_Gen * unif01_CreateDoubleGen (unif01_Gen *gen, int s)
    len += len3;
    name = util_Calloc (len + 1, sizeof (char));
    strncpy (name, gen->name, len);
-   strncat (name, "\nunif01_CreateDoubleGen with s = ", len2);
+   strncat (name, "\nunif01_CreateDoubleGen with s = ", 1 + len2);
    strncat (name, str, len3);
    genD->name    = name;
    return genD;
@@ -357,7 +357,7 @@ unif01_Gen * unif01_CreateLacGen (unif01_Gen *gen, int k, long I[])
    strncpy (name, gen->name, len);
    len2 = strlen ("\nunif01_CreateLacGen with k = ");
    len += len2;
-   strncat (name, "\nunif01_CreateLacGen with k = ", len2);
+   strncat (name, "\nunif01_CreateLacGen with k = ", 1 + len2);
    sprintf (str, "%-d", k);
    strncat (name, str, 16);
    strncat (name, ", I = (", 8);
@@ -366,9 +366,9 @@ unif01_Gen * unif01_CreateLacGen (unif01_Gen *gen, int k, long I[])
       sprintf (str, "%-ld", I[j]);
       strncat (name, str, 16);
       if (j < k - 1)
-         strncat (name, ", ", 2);
+         strncat (name, ", ", 3);
       else
-         strncat (name, ")", 1);
+         strncat (name, ")", 2);
    }
 
    len = strlen (name);
@@ -463,10 +463,10 @@ unif01_Gen * unif01_CreateBiasGen (unif01_Gen *gen, double a, double R)
 
    strncpy (name, gen->name, LEN0);
    len = strlen ("\nunif01_CreateBiasGen with  P = ");
-   strncat (name, "\nunif01_CreateBiasGen with  P = ", len);
+   strncat (name, "\nunif01_CreateBiasGen with  P = ", 1 + len);
    sprintf (str, "%.4f", R);
    len = strlen (str);
-   strncat (name, str, len);
+   strncat (name, str, 1 + len);
    strncat (name, ",  a = ", 8);
    sprintf (str, "%.4f", a);
    len = strlen (str);
@@ -555,7 +555,7 @@ unif01_Gen * unif01_CreateLuxGen (unif01_Gen *gen, int k, int L)
 
    strncpy (name, gen->name, LEN0);
    len = strlen ("\nunif01_CreateLuxGen:   k = ");
-   strncat (name, "\nunif01_CreateLuxGen:   k = ", len);
+   strncat (name, "\nunif01_CreateLuxGen:   k = ", 1 + len);
    sprintf (str, "%-d,   L = %-d", k, L);
    len = strlen (str);
    strncat (name, str, len);
@@ -755,7 +755,7 @@ unif01_Gen * unif01_CreateBitBlockGen (unif01_Gen *gen, int r, int s, int w)
    len += len3;
    name = util_Calloc (len + 1, sizeof (char));
    strncpy (name, gen->name, len);
-   strncat (name, "\nunif01_CreateBitBlockGen:   ", len2);
+   strncat (name, "\nunif01_CreateBitBlockGen:   ", 1 + len2);
    strncat (name, str, len3);
    genV->name    = name;
    genV->param   = paramV;

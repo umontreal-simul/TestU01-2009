@@ -58,7 +58,7 @@ void gdef_GetHostName (char machine[], int n)
       strncpy (machine, Z.nodename, (size_t) n);
       j = strlen (machine);
       if (n - j > 2)
-         strncat (machine, ", ", (size_t) 2);
+         strncat (machine, ", ", (size_t) 3);
       j = strlen (machine);
       if (n - j > 0)
          strncat (machine, Z.sysname, (size_t) (n - j));

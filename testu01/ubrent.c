@@ -723,7 +723,7 @@ unif01_Gen * ubrent_CreateXorgen64 (int r, int s, int a, int b, int c, int d,
    if (hasWeyl)
       strncat (name, "TRUE", 5);
    else
-      strncat (name, "FALSE", 5);
+      strncat (name, "FALSE", 6);
    addstr_ULONG (name, ",  seed = ", seed);
    leng = strlen (name);
    gen->name = util_Calloc (leng + 1, sizeof (char));

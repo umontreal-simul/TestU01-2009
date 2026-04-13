@@ -2162,7 +2162,7 @@ unif01_Gen * ulec_CreateMRG31k3p (long x10, long x11,
    addstr_Long (name, ", ", x20);
    addstr_Long (name, ", ", x21);
    addstr_Long (name, ", ", x22);
-   strncat (name, ")", (size_t) 1);
+   strncat (name, ")", (size_t) 2);
    leng = strlen (name);
    gen->name = util_Calloc (leng + 1, sizeof (char));
    strncpy (gen->name, name, leng);
