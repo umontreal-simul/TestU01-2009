@@ -573,7 +573,7 @@ unpredictable. % Similarly, a generator should not be so pathological so as to
 \code
 
 
-unif01_Gen *unif01_CreateExternGen01 (char *name, double (*gen01)(void));
+unif01_Gen *unif01_CreateExternGen01 (const char *name, double (*gen01)(void));
 \endcode
 \tab Implements a pre-existing external generator {\tt gen01} that is
   not part of TestU01. \label{externgen}
@@ -584,7 +584,7 @@ unif01_Gen *unif01_CreateExternGen01 (char *name, double (*gen01)(void));
 \code
 
 
-unif01_Gen *unif01_CreateExternGenBits (char *name,
+unif01_Gen *unif01_CreateExternGenBits (const char *name,
                                         unsigned int (*genB)(void));
 \endcode
 \tab Implements a pre-existing external generator {\tt genB} that is not part
@@ -598,7 +598,7 @@ unif01_Gen *unif01_CreateExternGenBits (char *name,
 \code
 
 
-unif01_Gen *unif01_CreateExternGenBitsL (char *name,
+unif01_Gen *unif01_CreateExternGenBitsL (const char *name,
                                          unsigned long (*genB)(void));
 \endcode
 \tab Similar to {\tt unif01\_CreateExternGenBits}, but with

@@ -1155,7 +1155,7 @@ static void WrExternGen (void *junk2)
 }
 
 
-unif01_Gen *unif01_CreateExternGen01 (char *name, double (*f_U01)(void))
+unif01_Gen *unif01_CreateExternGen01 (const char *name, double (*f_U01)(void))
 {
    unif01_Gen *gen;
    size_t leng;
@@ -1210,7 +1210,7 @@ static unsigned long GB_Bits (void *junk1, void *junk2)
 }
 
 
-unif01_Gen *unif01_CreateExternGenBits (char *name,
+unif01_Gen *unif01_CreateExternGenBits (const char *name,
     unsigned int (*f_Bits)(void))
 {
    unif01_Gen *gen;
@@ -1266,7 +1266,7 @@ static unsigned long GBLong_Bits (void *junk1, void *junk2)
 }
 
 
-unif01_Gen *unif01_CreateExternGenBitsL (char *name,
+unif01_Gen *unif01_CreateExternGenBitsL (const char *name,
     unsigned long (*f_Bits)(void))
 {
    unif01_Gen *gen;
