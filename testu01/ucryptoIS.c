@@ -143,9 +143,9 @@ typedef  struct randctx  randctx;
  If (flag==TRUE), then use the contents of randrsl[0..RANDSIZ-1] as the seed.
 ------------------------------------------------------------------------------
 */
-static void randinit(/*_ randctx *r, word flag _*/);
+static void randinit(randctx *r, word flag);
 
-static void isaac(/*_ randctx *r _*/);
+static void isaac(randctx *r);
 
 
 /*
