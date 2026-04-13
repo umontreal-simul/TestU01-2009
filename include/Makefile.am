@@ -1,11 +1,11 @@
 %.h: ${MYLIB}/%.tex
-	${top_srcdir}/tcode $< $@
+	${top_builddir}/tcode $< $@
 
 %.h: ${PROBDIST}/%.tex
-	${top_srcdir}/tcode $< $@
+	${top_builddir}/tcode $< $@
 
 %.h: ${TESTU01}/%.tex
-	${top_srcdir}/tcode $< $@
+	${top_builddir}/tcode $< $@
 
 include Makefile.def
 
