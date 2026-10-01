@@ -1,0 +1,276 @@
+=== kill/resume run -- battery=bigcrush mode=hi e*=256 ===
+WORK_DIR=/home/al/work/testu01_ckpt_killresume_pgprng_V2.3  RESULTS_DIR=/mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results
+kill interval: every 600s, whole process tree, up to 2000 attempts
+[2026-09-30 21:49:06 UTC] --- attempt 1: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 0 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 21:59:07 UTC] attempt 1: sending SIGKILL to process group 72423 (simulated crash, after ~600s)
+[2026-09-30 21:59:07 UTC] attempt 1: killed; 6 new sub-test(s) were confirmed during it (6 total). Re-launching identical command to resume.
+[2026-09-30 21:59:07 UTC] --- attempt 2: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 6 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:09:07 UTC] attempt 2: sending SIGKILL to process group 86029 (simulated crash, after ~600s)
+[2026-09-30 22:09:07 UTC] attempt 2: killed; 4 new sub-test(s) were confirmed during it (10 total). Re-launching identical command to resume.
+[2026-09-30 22:09:07 UTC] --- attempt 3: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 10 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:19:07 UTC] attempt 3: sending SIGKILL to process group 86174 (simulated crash, after ~600s)
+[2026-09-30 22:19:08 UTC] attempt 3: killed; 4 new sub-test(s) were confirmed during it (14 total). Re-launching identical command to resume.
+[2026-09-30 22:19:08 UTC] --- attempt 4: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 14 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:29:08 UTC] attempt 4: sending SIGKILL to process group 86349 (simulated crash, after ~600s)
+[2026-09-30 22:29:08 UTC] attempt 4: killed; 3 new sub-test(s) were confirmed during it (17 total). Re-launching identical command to resume.
+[2026-09-30 22:29:08 UTC] --- attempt 5: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 17 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:39:08 UTC] attempt 5: sending SIGKILL to process group 86498 (simulated crash, after ~600s)
+[2026-09-30 22:39:08 UTC] attempt 5: killed; 2 new sub-test(s) were confirmed during it (19 total). Re-launching identical command to resume.
+[2026-09-30 22:39:08 UTC] --- attempt 6: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 19 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:49:09 UTC] attempt 6: sending SIGKILL to process group 86643 (simulated crash, after ~600s)
+[2026-09-30 22:49:09 UTC] attempt 6: killed; 1 new sub-test(s) were confirmed during it (20 total). Re-launching identical command to resume.
+[2026-09-30 22:49:09 UTC] --- attempt 7: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 20 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 22:59:09 UTC] attempt 7: sending SIGKILL to process group 86815 (simulated crash, after ~600s)
+[2026-09-30 22:59:09 UTC] attempt 7: killed; 2 new sub-test(s) were confirmed during it (22 total). Re-launching identical command to resume.
+[2026-09-30 22:59:09 UTC] --- attempt 8: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 22 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:09:09 UTC] attempt 8: sending SIGKILL to process group 86964 (simulated crash, after ~600s)
+[2026-09-30 23:09:09 UTC] attempt 8: killed; 5 new sub-test(s) were confirmed during it (27 total). Re-launching identical command to resume.
+[2026-09-30 23:09:09 UTC] --- attempt 9: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 27 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:19:10 UTC] attempt 9: sending SIGKILL to process group 87109 (simulated crash, after ~600s)
+[2026-09-30 23:19:10 UTC] attempt 9: killed; 4 new sub-test(s) were confirmed during it (31 total). Re-launching identical command to resume.
+[2026-09-30 23:19:10 UTC] --- attempt 10: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 31 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:29:10 UTC] attempt 10: sending SIGKILL to process group 87282 (simulated crash, after ~600s)
+[2026-09-30 23:29:10 UTC] attempt 10: killed; 2 new sub-test(s) were confirmed during it (33 total). Re-launching identical command to resume.
+[2026-09-30 23:29:10 UTC] --- attempt 11: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 33 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:39:10 UTC] attempt 11: sending SIGKILL to process group 87431 (simulated crash, after ~600s)
+[2026-09-30 23:39:10 UTC] attempt 11: killed; 1 new sub-test(s) were confirmed during it (34 total). Re-launching identical command to resume.
+[2026-09-30 23:39:10 UTC] --- attempt 12: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 34 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:49:10 UTC] attempt 12: sending SIGKILL to process group 87576 (simulated crash, after ~600s)
+[2026-09-30 23:49:11 UTC] attempt 12: killed; 1 new sub-test(s) were confirmed during it (35 total). Re-launching identical command to resume.
+[2026-09-30 23:49:11 UTC] --- attempt 13: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 35 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-09-30 23:59:11 UTC] attempt 13: sending SIGKILL to process group 87746 (simulated crash, after ~600s)
+[2026-09-30 23:59:11 UTC] attempt 13: killed; 1 new sub-test(s) were confirmed during it (36 total). Re-launching identical command to resume.
+[2026-09-30 23:59:11 UTC] --- attempt 14: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 36 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:09:11 UTC] attempt 14: sending SIGKILL to process group 87892 (simulated crash, after ~600s)
+[2026-10-01 00:09:11 UTC] attempt 14: killed; 2 new sub-test(s) were confirmed during it (38 total). Re-launching identical command to resume.
+[2026-10-01 00:09:11 UTC] --- attempt 15: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 38 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:19:11 UTC] attempt 15: sending SIGKILL to process group 88119 (simulated crash, after ~600s)
+[2026-10-01 00:19:11 UTC] attempt 15: killed; 2 new sub-test(s) were confirmed during it (40 total). Re-launching identical command to resume.
+[2026-10-01 00:19:11 UTC] --- attempt 16: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 40 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:29:12 UTC] attempt 16: sending SIGKILL to process group 88277 (simulated crash, after ~600s)
+[2026-10-01 00:29:12 UTC] attempt 16: killed; 3 new sub-test(s) were confirmed during it (43 total). Re-launching identical command to resume.
+[2026-10-01 00:29:12 UTC] --- attempt 17: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 43 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:39:12 UTC] attempt 17: sending SIGKILL to process group 88480 (simulated crash, after ~600s)
+[2026-10-01 00:39:12 UTC] attempt 17: killed; 2 new sub-test(s) were confirmed during it (45 total). Re-launching identical command to resume.
+[2026-10-01 00:39:12 UTC] --- attempt 18: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 45 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:49:12 UTC] attempt 18: sending SIGKILL to process group 88628 (simulated crash, after ~600s)
+[2026-10-01 00:49:12 UTC] attempt 18: killed; 3 new sub-test(s) were confirmed during it (48 total). Re-launching identical command to resume.
+[2026-10-01 00:49:12 UTC] --- attempt 19: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 48 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 00:59:13 UTC] attempt 19: sending SIGKILL to process group 88772 (simulated crash, after ~600s)
+[2026-10-01 00:59:13 UTC] attempt 19: killed; 3 new sub-test(s) were confirmed during it (51 total). Re-launching identical command to resume.
+[2026-10-01 00:59:13 UTC] --- attempt 20: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 51 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:09:13 UTC] attempt 20: sending SIGKILL to process group 88942 (simulated crash, after ~600s)
+[2026-10-01 01:09:13 UTC] attempt 20: killed; 5 new sub-test(s) were confirmed during it (56 total). Re-launching identical command to resume.
+[2026-10-01 01:09:13 UTC] --- attempt 21: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 56 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:19:13 UTC] attempt 21: sending SIGKILL to process group 89091 (simulated crash, after ~600s)
+[2026-10-01 01:19:13 UTC] attempt 21: killed; 3 new sub-test(s) were confirmed during it (59 total). Re-launching identical command to resume.
+[2026-10-01 01:19:13 UTC] --- attempt 22: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 59 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:29:14 UTC] attempt 22: sending SIGKILL to process group 89239 (simulated crash, after ~600s)
+[2026-10-01 01:29:14 UTC] attempt 22: killed; 3 new sub-test(s) were confirmed during it (62 total). Re-launching identical command to resume.
+[2026-10-01 01:29:14 UTC] --- attempt 23: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 62 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:39:14 UTC] attempt 23: sending SIGKILL to process group 89410 (simulated crash, after ~600s)
+[2026-10-01 01:39:14 UTC] attempt 23: killed; 2 new sub-test(s) were confirmed during it (64 total). Re-launching identical command to resume.
+[2026-10-01 01:39:14 UTC] --- attempt 24: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 64 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:49:14 UTC] attempt 24: sending SIGKILL to process group 89559 (simulated crash, after ~600s)
+[2026-10-01 01:49:14 UTC] attempt 24: killed; 3 new sub-test(s) were confirmed during it (67 total). Re-launching identical command to resume.
+[2026-10-01 01:49:14 UTC] --- attempt 25: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 67 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 01:59:15 UTC] attempt 25: sending SIGKILL to process group 89703 (simulated crash, after ~600s)
+[2026-10-01 01:59:15 UTC] attempt 25: killed; 12 new sub-test(s) were confirmed during it (79 total). Re-launching identical command to resume.
+[2026-10-01 01:59:15 UTC] --- attempt 26: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 79 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:09:15 UTC] attempt 26: sending SIGKILL to process group 89874 (simulated crash, after ~600s)
+[2026-10-01 02:09:15 UTC] attempt 26: killed; 8 new sub-test(s) were confirmed during it (87 total). Re-launching identical command to resume.
+[2026-10-01 02:09:15 UTC] --- attempt 27: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 87 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:19:15 UTC] attempt 27: sending SIGKILL to process group 90023 (simulated crash, after ~600s)
+[2026-10-01 02:19:15 UTC] attempt 27: killed; 3 new sub-test(s) were confirmed during it (90 total). Re-launching identical command to resume.
+[2026-10-01 02:19:15 UTC] --- attempt 28: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 90 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:29:16 UTC] attempt 28: sending SIGKILL to process group 90171 (simulated crash, after ~600s)
+[2026-10-01 02:29:16 UTC] attempt 28: killed; 3 new sub-test(s) were confirmed during it (93 total). Re-launching identical command to resume.
+[2026-10-01 02:29:16 UTC] --- attempt 29: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 93 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:39:16 UTC] attempt 29: sending SIGKILL to process group 90355 (simulated crash, after ~600s)
+[2026-10-01 02:39:16 UTC] attempt 29: killed; 1 new sub-test(s) were confirmed during it (94 total). Re-launching identical command to resume.
+[2026-10-01 02:39:16 UTC] --- attempt 30: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 94 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:49:16 UTC] attempt 30: sending SIGKILL to process group 90510 (simulated crash, after ~600s)
+[2026-10-01 02:49:16 UTC] attempt 30: killed; 2 new sub-test(s) were confirmed during it (96 total). Re-launching identical command to resume.
+[2026-10-01 02:49:16 UTC] --- attempt 31: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 96 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 02:59:17 UTC] attempt 31: sending SIGKILL to process group 90654 (simulated crash, after ~600s)
+[2026-10-01 02:59:17 UTC] attempt 31: killed; 3 new sub-test(s) were confirmed during it (99 total). Re-launching identical command to resume.
+[2026-10-01 02:59:17 UTC] --- attempt 32: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 99 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+[2026-10-01 03:09:17 UTC] attempt 32: sending SIGKILL to process group 90825 (simulated crash, after ~600s)
+[2026-10-01 03:09:17 UTC] attempt 32: killed; 4 new sub-test(s) were confirmed during it (103 total). Re-launching identical command to resume.
+[2026-10-01 03:09:17 UTC] --- attempt 33: launching 'bash wsl_build_testu01_ckpt.sh bigcrush hi' (fresh process group; kill interval 600s; 103 sub-test(s) confirmed so far) ---
+=== [1-3/4] skipped -- existing build in /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 is up to date, reusing it ===
+    (/home/al/work/testu01_ckpt_killresume_pgprng_V2.3/pgprng_testu01_ckpt_driver; delete /home/al/work/testu01_ckpt_killresume_pgprng_V2.3 or touch a file under testu01_build/ to force a rebuild)
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+    hi: driver exited normally (battery complete) -- see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/bigcrush_hi_e256_ckpt.txt
+PASSED: hi -- all tests passed (see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/bigcrush_hi_e256_ckpt.txt)
+
+Done (or stopped -- re-run this same command to resume any incomplete mode). e*=256
+Results are in: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/
+Build logs (if something failed): /home/al/work/testu01_ckpt_killresume_pgprng_V2.3/configure.log, /home/al/work/testu01_ckpt_killresume_pgprng_V2.3/make.log, /home/al/work/testu01_ckpt_killresume_pgprng_V2.3/install.log
+[2026-10-01 03:15:37 UTC] attempt 33: process finished on its own (exit 0) before the next scheduled kill
+[2026-10-01 03:15:37 UTC] battery complete -- see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/bigcrush_hi_e256_ckpt.txt
+[2026-10-01 03:15:37 UTC] === DONE: battery complete after 33 attempt(s) (kills + resumes), see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/bigcrush_hi_e256_ckpt.txt ===
+[2026-10-01 03:15:37 UTC] Evidence state (genesis + final checkpoints) saved to: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/evidence_state
+[2026-10-01 03:15:37 UTC] Transcript: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/kill_resume_results/kill_resume_transcript.log

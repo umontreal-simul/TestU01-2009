@@ -1,0 +1,85 @@
+diff -Naur a/testu01/ucryptoIS.c b/testu01/ucryptoIS.c
+--- a/testu01/ucryptoIS.c	2026-09-29 03:57:53.998233656 +0000
++++ b/testu01/ucryptoIS.c	2026-09-29 03:57:54.000233656 +0000
+@@ -143,9 +143,9 @@
+  If (flag==TRUE), then use the contents of randrsl[0..RANDSIZ-1] as the seed.
+ ------------------------------------------------------------------------------
+ */
+-static void randinit(/*_ randctx *r, word flag _*/);
++static void randinit(randctx *ctx, word flag);
+ 
+-static void isaac(/*_ randctx *r _*/);
++static void isaac(randctx *ctx);
+ 
+ 
+ /*
+@@ -196,8 +196,7 @@
+   *(r++) = b = ind(mm,y>>RANDSIZL) + x; \
+ }
+ 
+-static void     isaac(ctx)
+-randctx *ctx;
++static void     isaac(randctx *ctx)
+ {
+    register ub4 a,b,x,y,*m,*mm,*m2,*r,*mend;
+    mm=ctx->randmem; r=ctx->randrsl;
+@@ -233,9 +232,7 @@
+ }
+ 
+ /* if (flag==TRUE), then use the contents of randrsl[] to initialize mm[]. */
+-static void randinit(ctx, flag)
+-randctx *ctx;
+-word     flag;
++static void randinit(randctx *ctx, word flag)
+ {
+    word i;
+    ub4 a,b,c,d,e,f,g,h;
+diff -Naur a/testu01/uknuth.c b/testu01/uknuth.c
+--- a/testu01/uknuth.c	2026-09-29 03:57:53.999233656 +0000
++++ b/testu01/uknuth.c	2026-09-29 03:57:54.000233656 +0000
+@@ -59,9 +59,8 @@
+ long ran_x1[KK];                    /* the generator state */
+ 
+ /* void ran_array(long aa[],int n) */
+-void ran_array1(aa,n)    /* put n new random numbers in aa */
+-  long *aa;   /* destination */
+-  int n;      /* array length (must be at least KK) */
++/* put n new random numbers in aa: aa = destination, n = array length (must be at least KK) */
++void ran_array1(long *aa, int n)
+ {
+   register int i,j;
+   for (j=0;j<KK;j++) aa[j]=ran_x1[j];
+@@ -75,8 +74,8 @@
+ #define evenize(x) ((x)&(MM-2))   /* make x even */
+ 
+ /* void ran_start(long seed) */
+-void ran_start1(seed)    /* do this before using ran_array1 */
+-  long seed;            /* selector for different streams */
++/* do this before using ran_array1; seed = selector for different streams */
++void ran_start1(long seed)
+ {
+   register int t,j;
+   long x[KK+KK-1];              /* the preparation buffer */
+@@ -240,9 +239,8 @@
+ double ran_u1[KK];           /* the generator state */
+ 
+ /* void ranf_array1(double aa[], int n) */
+-void ranf_array1(aa,n)    /* put n new random fractions in aa */
+-  double *aa;   /* destination */
+-  int n;      /* array length (must be at least KK) */
++/* put n new random fractions in aa: aa = destination, n = array length (must be at least KK) */
++void ranf_array1(double *aa, int n)
+ {
+   register int i,j;
+   for (j=0;j<KK;j++) aa[j]=ran_u1[j];
+@@ -255,8 +253,8 @@
+ #define is_odd(s) ((s)&1)
+ 
+ /* void ranf_start1(long seed) */
+-void ranf_start1(seed)    /* do this before using ranf_array1 */
+-  long seed;            /* selector for different streams */
++/* do this before using ranf_array1; seed = selector for different streams */
++void ranf_start1(long seed)
+ {
+   register int t,s,j;
+   double u[KK+KK-1],ul[KK+KK-1];

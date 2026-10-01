@@ -1,0 +1,129 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = Jupiter, Linux
+
+pgprng_v2.3(hi)
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r =  0,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.29
+p-value of test                       :    0.16
+
+Kolmogorov-Smirnov- statistic = D-    :    0.15
+p-value of test                       :    0.59
+
+Anderson-Darling statistic = A2       :    1.18
+p-value of test                       :    0.27
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.92
+p-value of test                       :    0.82
+
+Sample variance                       :    0.34
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:01:01.71
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = Jupiter, Linux
+
+pgprng_v2.3(hi)
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r = 27,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.067
+p-value of test                       :    0.88
+
+Kolmogorov-Smirnov- statistic = D-    :    0.34
+p-value of test                       :    0.08
+
+Anderson-Darling statistic = A2       :    1.48
+p-value of test                       :    0.18
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.37
+p-value of test                       :    0.08
+
+Sample variance                       :    0.56
+p-value of test                       :    0.83
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.06
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = Jupiter, Linux
+
+pgprng_v2.3(hi)
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r = 27,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.15
+p-value of test                       :    0.57
+
+Kolmogorov-Smirnov- statistic = D-    :    0.25
+p-value of test                       :    0.24
+
+Anderson-Darling statistic = A2       :    0.73
+p-value of test                       :    0.53
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.64
+p-value of test                       :    0.26
+
+Sample variance                       :    0.82
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:01:02.50
+
+Generator state:
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        pgprng_v2.3(hi)
+ Number of statistics:  160
+ Total CPU time:   00:03:18.28
+
+ All tests were passed
+
+
+

@@ -1,0 +1,45 @@
+========================================================================
+Matched-pair analysis: control vs kill/resume
+Drafted by Claude (Anthropic) for Aly Graham
+========================================================================
+control:      evidence_generation/control_results
+kill/resume:  evidence_generation/kill_resume_results
+
+-- 1. Completion
+[INFO] control: 106 sub-test confirmations logged so far
+[INFO] kill/resume: 106 sub-test confirmations logged so far
+[PASS] both runs finished (final report present)
+
+-- 2. Each sub-test confirmed exactly once, in order; stream position only moves forward
+[PASS] control: no sub-test confirmed twice (no replay) -- 106 unique confirmations
+[PASS] control: sub-tests confirmed in increasing order
+[PASS] control: words consumed strictly increasing (no rewind)
+[PASS] kill/resume: no sub-test confirmed twice (no replay) -- 106 unique confirmations
+[PASS] kill/resume: sub-tests confirmed in increasing order
+[PASS] kill/resume: words consumed strictly increasing (no rewind)
+
+-- 3. Stream position at the end of every sub-test
+[PASS] 106 sub-test(s) logged by both runs end at the identical stream word
+
+-- 4/5. Same tests, same order, bit-identical p-values
+[PASS] number of statistics equal -- control=160 kill/resume=160
+[PASS] both runs recorded the same set of sub-tests -- 106 sub-tests
+[PASS] test names identical, in the same order
+[PASS] all 160 p-value(s) in the 106 common sub-test(s) are bit-for-bit identical
+
+-- 6. p-values inside the pass window
+[PASS] control: all 160 statistics within [0.001, 0.999]
+[PASS] kill/resume: all 160 statistics within [0.001, 0.999]
+
+-- Interruption summary (kill/resume run)
+[INFO] SIGKILLs sent: 32; resumes logged by the driver: 32
+[INFO] control resumes (should be 0): 0
+[PASS] control run was never interrupted
+[PASS] kill/resume run was actually interrupted and resumed at least once
+[INFO] control: driver's final word count -- 357,098,462,394
+[INFO] kill/resume: driver's final word count -- 357,098,462,394
+[PASS] total words consumed is identical in both runs
+
+========================================================================
+RESULT: ALL CHECKS PASSED
+========================================================================
