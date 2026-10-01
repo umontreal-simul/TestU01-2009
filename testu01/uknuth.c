@@ -59,9 +59,8 @@ both versions in our file. (R. Simard)
 long ran_x1[KK];                    /* the generator state */
 
 /* void ran_array(long aa[],int n) */
-void ran_array1(aa,n)    /* put n new random numbers in aa */
-  long *aa;   /* destination */
-  int n;      /* array length (must be at least KK) */
+/* put n new random numbers in aa: aa = destination, n = array length (must be at least KK) */
+void ran_array1(long *aa, int n)
 {
   register int i,j;
   for (j=0;j<KK;j++) aa[j]=ran_x1[j];
@@ -75,8 +74,8 @@ void ran_array1(aa,n)    /* put n new random numbers in aa */
 #define evenize(x) ((x)&(MM-2))   /* make x even */
 
 /* void ran_start(long seed) */
-void ran_start1(seed)    /* do this before using ran_array1 */
-  long seed;            /* selector for different streams */
+/* do this before using ran_array1; seed = selector for different streams */
+void ran_start1(long seed)
 {
   register int t,j;
   long x[KK+KK-1];              /* the preparation buffer */
@@ -240,9 +239,8 @@ include both versions in our file. (R. Simard)
 double ran_u1[KK];           /* the generator state */
 
 /* void ranf_array1(double aa[], int n) */
-void ranf_array1(aa,n)    /* put n new random fractions in aa */
-  double *aa;   /* destination */
-  int n;      /* array length (must be at least KK) */
+/* put n new random fractions in aa: aa = destination, n = array length (must be at least KK) */
+void ranf_array1(double *aa, int n)
 {
   register int i,j;
   for (j=0;j<KK;j++) aa[j]=ran_u1[j];
@@ -255,8 +253,8 @@ void ranf_array1(aa,n)    /* put n new random fractions in aa */
 #define is_odd(s) ((s)&1)
 
 /* void ranf_start1(long seed) */
-void ranf_start1(seed)    /* do this before using ranf_array1 */
-  long seed;            /* selector for different streams */
+/* do this before using ranf_array1; seed = selector for different streams */
+void ranf_start1(long seed)
 {
   register int t,s,j;
   double u[KK+KK-1],ul[KK+KK-1];
