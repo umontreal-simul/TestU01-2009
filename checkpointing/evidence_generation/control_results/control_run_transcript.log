@@ -1,0 +1,23 @@
+=== control run (no interruption) -- battery=bigcrush mode=hi e*=256 ===
+WORK_DIR=/home/al/work/testu01_ckpt_ctrl_pgprng_V2.3  RESULTS_DIR=/mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results
+[2026-09-30 21:49:06 UTC] starting
+=== [1/4] extracting TestU01 source + applying patches into /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3 (space-free) ===
+patching file testu01/ucryptoIS.c
+patching file testu01/uknuth.c
+patching file testu01/bbattery.c
+=== [2/4] configure + make + install ===
+TestU01 (patched) built and installed to /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3/testu01_install
+=== [3/4] building pgprng_testu01_ckpt_driver ===
+driver built: /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3/pgprng_testu01_ckpt_driver
+=== [4/4] genesis + checkpointed battery run(s): battery=bigcrush modes=[hi] e*=256 ===
+--- bigcrush / hi: checkpointed, will auto-resume on interruption ---
+    attempt 1 (Ctrl-C to stop this mode; re-run this script to resume later)
+    hi: driver exited normally (battery complete) -- see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results/bigcrush_hi_e256_ckpt.txt
+PASSED: hi -- all tests passed (see /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results/bigcrush_hi_e256_ckpt.txt)
+
+Done (or stopped -- re-run this same command to resume any incomplete mode). e*=256
+Results are in: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results/
+Build logs (if something failed): /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3/configure.log, /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3/make.log, /home/al/work/testu01_ckpt_ctrl_pgprng_V2.3/install.log
+Evidence state (genesis + final checkpoints) saved to: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results/evidence_state
+[2026-10-01 02:25:02 UTC] finished
+Result: /mnt/g/pgprng/Pretty Good PRNG Work/pgprng_2.3/TestU01-2009_Pull_Request/evidence_generation/control_results/bigcrush_hi_e256_ckpt.txt

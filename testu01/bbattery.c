@@ -71,7 +71,7 @@ static char CharTemp[LEN + 1];
 /* Gives the test number as enumerated in bbattery.tex. Some test applies
    more than one test, so the array of p-values does not correspond with 
    the test number in the doc. */
-static int TestNumber[1 + NDIM] = { 0 };
+int TestNumber[1 + NDIM] = { 0 };
 
 
 
@@ -79,7 +79,7 @@ static int TestNumber[1 + NDIM] = { 0 };
 /*-------------------------------- Functions ------------------------------*/
 
 
-static void GetName (unif01_Gen * gen, char *genName)
+void GetName (unif01_Gen * gen, char *genName)
 {
    char *p;
    int len1, len2;
@@ -143,7 +143,7 @@ static void WritepVal (double p)
 
 /*=========================================================================*/
 
-static void WriteReport (
+void WriteReport (
    char *genName,                 /* Generator or file name */
    char *batName,                 /* Battery name */
    int N,                         /* Max. number of tests */
@@ -232,7 +232,7 @@ static void WriteReport (
 
 /*=========================================================================*/
 
-static void GetPVal_Walk (long N, swalk_Res * res, int *pj, char *mess, int j2)
+void GetPVal_Walk (long N, swalk_Res * res, int *pj, char *mess, int j2)
 /*
  * Get the p-values in a swalk_RandomWalk1 test
  */
@@ -309,7 +309,7 @@ static void GetPVal_Walk (long N, swalk_Res * res, int *pj, char *mess, int j2)
 
 /*=========================================================================*/
 
-static void GetPVal_CPairs (long N, snpair_Res * res, int *pj, char *mess,
+void GetPVal_CPairs (long N, snpair_Res * res, int *pj, char *mess,
    int j2)
 /*
  * Get the p-values in a snpair_ClosePairs test
@@ -377,7 +377,7 @@ static void GetPVal_CPairs (long N, snpair_Res * res, int *pj, char *mess,
 
 /*=========================================================================*/
 
-static void InitBat (void)
+void InitBat (void)
 /*
  * Initializes the battery of tests: sets all p-values to -1.
  */
